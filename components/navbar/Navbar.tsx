@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ActiveLink } from '../activeLink/ActiveLink';
 
 const itemsMenu = [
@@ -8,7 +9,7 @@ const itemsMenu = [
 export const Navbar = () => {
   return (
     <nav className="flex gap-2 bg-blue-400 bg-opacity-30 p-2 m-2 rounded">
-        <span>Home</span>
+        <Link href={"./"}>Home</Link>
 
         <div className="flex flex-1"></div>
         {
